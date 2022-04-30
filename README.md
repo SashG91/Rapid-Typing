@@ -1,4 +1,4 @@
-# Tianjin Cycle Meet
+# Speed Typing Game
 
 ## A User-Centric Frontend Development Milestone Project
 

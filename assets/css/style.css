@@ -30,6 +30,25 @@ header h1 {
   padding: 5px;
 
 }
+/* game rules */
+section h2 {
+  color: rgb(217, 52, 80);
+}
+
+.game-rules {
+  display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    list-style-type: none;
+    margin-top: 5px;
+    padding-bottom: 20px;
+    font-size: 150%;
+    color: #0074d0;
+
+}
 
 /* footer */
 

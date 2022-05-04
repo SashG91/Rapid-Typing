@@ -1,4 +1,4 @@
-# Speed Typing Game
+# Rapid Typing
 
 ## A User-Centric Frontend Development Milestone Project
 

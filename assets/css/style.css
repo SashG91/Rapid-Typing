@@ -88,14 +88,14 @@ footer a {
     padding: 1rem;
     border-radius: .5rem;
     width: 700px;
-    max-width: 90%;
+    max-width: 100%;
   }
   
   .timer {
     position: absolute;
     top: 2rem;
     font-size: 3rem;
-    color: #d9c12a;
+    color: #d92a2a;
     font-weight: bold;
   }
   
@@ -151,7 +151,7 @@ body.dark {
 	position: relative;
 	height: 26px;
 	width: 50px;
-	transform: scale(1.5);
+	transform: scale(1);
 }
 
 .label .ball {

@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Roboto, sans-serif;
-    color: white;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Roboto, sans-serif;
+  color: white;
+}
+
 /* header and logo */
 
 header {
   width: 100%;
-  background-color: #0074d0;
+  background-color: rgb(127, 131, 138);
   padding-top: 10px;
 }
 
 header h1 {
   font-family: 'Bebas Neue', sans-serif;
-    font-size: 180%;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: white;
+  font-size: 180%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
 }
 
 #logo {
@@ -30,41 +31,149 @@ header h1 {
   padding: 5px;
 
 }
+
 /* game rules */
 section h2 {
-  color: rgb(217, 52, 80);
+  color: rgb(127, 131, 138);
 }
 
-.game-rules {
-  display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Bebas Neue', sans-serif;
-    list-style-type: none;
-    margin-top: 5px;
-    padding-bottom: 20px;
-    font-size: 150%;
-    color: #0074d0;
+.objectives-list {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 85%;
+  background-color: rgb(127, 131, 138);
+  color: white;
+  line-height: 1.5;
+  padding: 5px;
+}
 
+ol {
+  padding-inline-start: 20px;
+  
+}
+
+/* quotes inputes & timer */
+
+body,
+.quote-input {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.container {
+  background-color: #efdc2f;
+  padding: 1rem;
+  border-radius: .5rem;
+  width: 700px;
+  max-width: 100%;
+  height: 200px;
+}
+
+.timer {
+  position: absolute;
+  top: 2rem;
+  font-size: 3rem;
+  color: #d92a2a;
+  font-weight: bold;
+}
+
+.quote-display {
+  margin-bottom: 1rem;
+  margin-left: calc(1rem + 2px);
+  margin-right: calc(1rem + 2px);
+}
+
+.quote-input {
+  background-color: transparent;
+  border: 2px solid #A1922E;
+  outline: none;
+  width: 100%;
+  height: 8rem;
+  margin-top: 20px;
+  resize: none;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .5rem;
+}
+
+.quote-input:focus {
+  border-color: black;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+  text-decoration: underline;
+}
+
+/* dark and light mode */
+body.dark {
+  background: #292C35;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.theme-mode {
+  margin-bottom: 12px;
 }
 
 /* footer */
 
 footer {
-  background-color: #0074d0;
+  background-color: rgb(127, 131, 138);
   width: 100%;
 }
 
 footer li a:hover i {
-   color: white;
-   transform: rotate(-15deg) scale(1.3);
+  color: white;
+  transform: rotate(-15deg) scale(1.3);
 }
 
 .socials {
   list-style-type: none;
-  font-size: 100%;
+  font-size: 150%;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -77,104 +186,4 @@ footer a {
   color: white;
   justify-content: center;
   align-items: center;
-}
-  
-  body, .quote-input {
-    font-family: 
-  }
-  
-  .container {
-    background-color: #efdc2f;
-    padding: 1rem;
-    border-radius: .5rem;
-    width: 700px;
-    max-width: 100%;
-  }
-  
-  .timer {
-    position: absolute;
-    top: 2rem;
-    font-size: 3rem;
-    color: #d92a2a;
-    font-weight: bold;
-  }
-  
-  .quote-display {
-    margin-bottom: 1rem;
-    margin-left: calc(1rem + 2px);
-    margin-right: calc(1rem + 2px);
-  }
-  
-  .quote-input {
-    background-color: transparent;
-    border: 2px solid #A1922E;
-    outline: none;
-    width: 100%;
-    height: 8rem;
-    margin: auto;
-    resize: none;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    border-radius: .5rem;
-  }
-  
-  .quote-input:focus {
-    border-color: black;
-  }
-  
-  .correct {
-    color: green;
-  }
-  
-  .incorrect {
-    color: red;
-    text-decoration: underline;
-  }
-
-body.dark {
-	background: #292C35;
-}
-
-.checkbox {
-	opacity: 0;
-	position: absolute;
-}
-
-.label {
-	background-color: #111;
-	border-radius: 50px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 5px;
-	position: relative;
-	height: 26px;
-	width: 50px;
-	transform: scale(1);
-}
-
-.label .ball {
-	background-color: #fff;
-	border-radius: 50%;
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	height: 22px;
-	width: 22px;
-	transform: translateX(0px);
-	transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .label .ball {
-	transform: translateX(24px);
-}
-
-
-.fa-moon {
-	color: #f1c40f;
-}
-
-.fa-sun {
-	color: #f39c12;
 }

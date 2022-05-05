@@ -17,15 +17,8 @@
     <header>
         <h1 id="logo">Welcome to Rapid Typing! <i class="fas fa-keyboard"></i></h1>
     </header>
-    <div>
-        <div class="timer" id="timer"></div>
-        <div class="container">
-            <div class="quote-display" id="quoteDisplay"></div>
-            <textarea id="quoteInput" class="quote-input" autofocus></textarea>
-        </div>
-    </div>
     <!-- Light and Dark Theme button -->
-    <div>
+    <div class="theme-mode">
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="label" for="chk">
             <i class="fas fa-moon"></i>
@@ -33,34 +26,39 @@
             <div class="ball"></div>
         </label>
     </div>
+    <div>
+        <div class="timer" id="timer"></div>
+        <div class="container">
+            <div class="quote-display" id="quoteDisplay"></div>
+            <textarea id="quoteInput" class="quote-input" autofocus></textarea>
+        </div>
+    </div>
+
 
     <section>
-        <h2>Game Rules:</h2>
-        <ol class="game-rules">
-            <li>Depending on the level selected you will be presented with a word, case sensitive text or alphanumeric
-                text.</li>
-            <li>Retype the text as quick as possible.</li>
-            <li>If typed correctly the letters will be illuminated in green and if incorrect red.</li>
-            <li>Your speed and accuracy will be calculated.</li>
-        </ol>
+        <h2>Game Objectives:</h2>
+        <div class="objectives-list">
+            <ol>
+                <li> You will be presented with a text at random.</li>
+                <li> Retype the text as quick as possible.</li>
+                <li> If typed correctly the letters will be illuminated in green and if incorrect red.</li>
+            </ol>
+        </div>
 
     </section>
     <footer>
         <ul class="socials">
             <li>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)"><i
-                        class="fab fa-2x fa-facebook-square"></i></a>
+                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
             </li>
             <li>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in a new tab)"><i
-                        class="fab fa-2x fa-instagram-square"></i></a>
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
             </li>
             <li>
                 <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Youtube page (opens in a new tab)"><i
-                        class="fab fa-2x fa-youtube-square"></i></a>
+                    aria-label="Visit our Youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
             </li>
 
         </ul>

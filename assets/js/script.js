@@ -1,67 +1,202 @@
-const RANDOM_QUOTE_API_URL = 'http://api.quotable.io/random'
-const quoteDisplayElement = document.getElementById('quoteDisplay')
-const quoteInputElement = document.getElementById('quoteInput')
-const timerElement = document.getElementById('timer')
+window.addEventListener('load', init);
 
-quoteInputElement.addEventListener('input', () => {
-  const arrayQuote = quoteDisplayElement.querySelectorAll('span')
-  const arrayValue = quoteInputElement.value.split('')
+// Globlas
 
-  let correct = true
-  arrayQuote.forEach((characterSpan, index) => {
-    const character = arrayValue[index]
-    if (character == null) {
-      characterSpan.classList.remove('correct')
-      characterSpan.classList.remove('incorrect')
-      correct = false
-    } else if (character === characterSpan.innerText) {
-      characterSpan.classList.add('correct')
-      characterSpan.classList.remove('incorrect')
-    } else {
-      characterSpan.classList.remove('correct')
-      characterSpan.classList.add('incorrect')
-      correct = false
-    }
-  })
-
-  if (correct) renderNewQuote()
-})
-
-function getRandomQuote() {
-  return fetch(RANDOM_QUOTE_API_URL)
-    .then(response => response.json())
-    .then(data => data.content)
+// Available Levels
+const levels = {
+    easy: 15,
+    medium: 10,
+    hard: 5
 }
 
-async function renderNewQuote() {
-  const quote = await getRandomQuote()
-  quoteDisplayElement.innerHTML = ''
-  quote.split('').forEach(character => {
-    const characterSpan = document.createElement('span')
-    characterSpan.innerText = character
-    quoteDisplayElement.appendChild(characterSpan)
-  })
-  quoteInputElement.value = null
-  startTimer()
-}
+// To change level
+let currentLevel = levels.easy;
 
-let startTime
-function startTimer() {
-  timerElement.innerText = 0
-  startTime = new Date()
-  setInterval(() => {
-    timer.innerText = getTimerTime()
-  }, 1000)
-}
+let time = currentLevel;
+let score = 0;
+let isPlaying;
+let maxScore;
 
-function getTimerTime() {
-  return Math.floor((new Date() - startTime) / 1000)
-}
 
-renderNewQuote()
+// DOM Elements
+const wordInput = document.querySelector('#word-input');
+const currentWord = document.querySelector('#current-word');
+const scoreDisplay = document.querySelector('#score');
+const timeDisplay = document.querySelector('#time');
+const message = document.querySelector('#message');
+const seconds = document.querySelector('#seconds');
+const highScoreElt = document.querySelector('#high-score');
+const easyBtn = document.querySelector('#easy');
+const mediumBtn = document.querySelector('#medium');
+const hardBtn = document.querySelector('#hard');
 
-const chk = document.getElementById('chk');
+const words = [
+    'angular',
+    'magic',
+    'brew',
+    'while',
+    'throw',
+    'css',
+    'break',
+    'swing',
+    'echo',
+    'let',
+    'wall',
+    'laughter',
+    'hash',
+    'spinner',
+    'beer',
+    'ninja',
+    'javascript',
+    'master',
+    'program',
+    'coding',
+    'hero',
+    'learning',
+    'work',
+    'case',
+    'react',
+    'dragon',
+    'rush',
+    'api',
+    'init',
+    'motion',
+    'google',
+    'float',
+    'damn',
+    'block',
+    'ranking',
+    'nice',
+    'machine',
+    'perfect',
+    'deploy',
+    'terminal',
+    'array',
+    'vue',
+    'node',
+    'html',
+    'front',
+    'grid',
+    'stack',
+    'mac',
+    'console',
+    'ajax',
+    'heroku',
+    'loop',
+    'sql',
+    'php',
+    'data',
+    'npm',
+    'server',
+    'bash'
+];
+//option
+const settingOption = document.getElementById('optionBtn');
+const menuSlideElt = document.getElementById('menuSlide');
 
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
+settingOption.addEventListener('click', function(){
+    menuSlideElt.classList.toggle("slideIn");
 });
+
+
+// Seclect level
+function setlevel(e){
+    if(e.target === easyBtn){
+        currentLevel = levels.easy;
+    }else if(e.target === mediumBtn){
+        currentLevel = levels.medium;
+    }else if(e.target === hardBtn){
+        currentLevel = levels.hard;
+    }
+    console.log(currentLevel);
+    init();
+}
+
+// Initialize Game
+function init(){
+    // Show number of sec in UI
+    seconds.innerHTML = currentLevel;
+    // Load word from array
+    showWord(words);
+    // Start matching on word input
+    wordInput.addEventListener('input', startMatch);
+    // Call countdown every second
+    setInterval(countdown, 1000);
+    // Check game status
+    setInterval(checkStatus, 50);
+    maxScore = localStorage.getItem('highScore');
+    highScoreElt.innerHTML = maxScore;
+}
+
+//Start match
+function startMatch(){
+    wordInput.value = wordInput.value.toLowerCase();
+    if(matchWords()){
+        isPlaying = true;
+        time = currentLevel + 1;
+        showWord(words);
+        wordInput.value = '';
+        score++;
+    }
+
+    // If score is -1 display zero
+    if(score === -1){
+        scoreDisplay.innerHTML = 0;
+    }else{
+        scoreDisplay.innerHTML = score;
+        highScoreElt.innerHTML = score;
+        
+        if(score >= maxScore){
+            localStorage.setItem('highScore',score);
+        }
+    }
+    maxScore = localStorage.getItem('highScore');
+    scoreDisplay.innerHTML = score;
+    highScoreElt.innerHTML = maxScore;
+}
+
+// Match currentWord to wordInput
+function matchWords(){
+    
+        if(wordInput.value === currentWord.innerHTML){
+            message.innerHTML = 'Great';
+            return true;
+        }else{
+            message.innerHTML = '...';
+            return false;
+        }
+}
+
+// Pick and show random word
+function showWord(word){
+    // Generate random array index
+    const randIndex = Math.floor(Math.random() * words.length);
+    // Output random word
+    currentWord.innerHTML = words[randIndex];
+}
+// Countdown timer
+
+function countdown(){
+    // Make sure time is not runout
+    if(time > 0){
+        // decrement
+        time--;
+    }else if(time === 0){
+        // Game is over
+        isPlaying = false;
+    }
+    // Show time
+    timeDisplay.innerHTML = time;
+}
+
+// Check game status
+function checkStatus(){
+    if(!isPlaying && time === 0){
+        message.innerHTML = 'Game Over!';
+        score = -1;
+    }
+}
+
+easyBtn.addEventListener('click', setlevel);
+mediumBtn.addEventListener('click', setlevel);
+hardBtn.addEventListener('click', setlevel);

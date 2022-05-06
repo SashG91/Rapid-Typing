@@ -26,22 +26,41 @@
             <div class="ball"></div>
         </label>
     </div>
-    <div>
-        <div class="timer" id="timer"></div>
-        <div class="container">
-            <div class="quote-display" id="quoteDisplay"></div>
-            <textarea id="quoteInput" class="quote-input" autofocus></textarea>
+
+    <div class="container text-center">
+    <!-- Word input -->
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <p class="intro">Type the given words within <span class="text-success" id="seconds">5-15</span> Seconds:
+                </p>
+                <h2 class="display-2 mb-3" id="current-word">echo</h2>
+                <h4 class="mt-2" id="message">Your time is up!</h4>
+                <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input"
+                    autofocus="">
+
+    <!-- Time & Score Columns -->
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <h3>Time Left: <span id="time">0</span></h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Score: <span id="score">0</span></h3>
+                    </div>
+                    <div class="col-md-12">
+                        <h4>High score: <span id="high-score">3</span></h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 
     <section>
         <h2>Game Objectives:</h2>
         <div class="objectives-list">
             <ol>
-                <li> You will be presented with text to type at random.</li>
+                <li> Choose your level.</li>
+                <li> You will be presented with words to type.</li>
                 <li> Use the time allocated to type your way through as many as you can.</li>
-                <li> If typed correctly the letters will be illuminated in green and if incorrect red.</li>
                 <li> Challenge your time on every attempt! </li>
             </ol>
         </div>

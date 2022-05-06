@@ -6,7 +6,7 @@
 
 body {
   font-family: Roboto, sans-serif;
-  color: white;
+  color: rgb(30, 189, 142);
 }
 
 /* header and logo */
@@ -32,7 +32,7 @@ header h1 {
 
 }
 
-/* game rules */
+/* game objectives */
 section h2 {
   color: rgb(127, 131, 138);
 }
@@ -51,60 +51,59 @@ ol {
   
 }
 
-/* quotes inputes & timer */
+/* words & timer */
 
-body,
-.quote-input {
+*{
+  margin: 0;
+}
+
+body{
   font-family: 'Bebas Neue', sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.container {
-  background-color: #efdc2f;
-  padding: 1rem;
-  border-radius: .5rem;
-  width: 700px;
-  max-width: 100%;
-  height: 200px;
+.container text-center{
+color: #f39c12;
 }
 
-.timer {
+.menuInfo{
+  min-height: 80vh;
+}
+#optionBtn{
+  cursor: pointer;
+}
+.slide{
   position: absolute;
-  top: 2rem;
-  font-size: 3rem;
-  color: #d92a2a;
-  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 100%;
+  z-index: 10;
+  box-shadow: #444 1px 0 6px 2px;
+  transition: .2s ease;
+  opacity: 0;
 }
-
-.quote-display {
-  margin-bottom: 1rem;
-  margin-left: calc(1rem + 2px);
-  margin-right: calc(1rem + 2px);
+.slideIn{
+  opacity: 1;
+  top: 48px;
 }
-
-.quote-input {
-  background-color: transparent;
-  border: 2px solid #A1922E;
-  outline: none;
-  width: 100%;
-  height: 8rem;
-  margin-top: 20px;
-  resize: none;
-  padding: .5rem 1rem;
-  font-size: 1rem;
-  border-radius: .5rem;
+.menuCard{
+  font-family: 'Kalam', cursive;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  border: none;
 }
-
-.quote-input:focus {
-  border-color: black;
+div button{
+  width: 120px;
+  margin: 5px auto;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
-
-.correct {
-  color: green;
-}
-
-.incorrect {
-  color: red;
-  text-decoration: underline;
+#current-word{
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: arial;
 }
 
 /* dark and light mode */

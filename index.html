@@ -3,42 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Speed typing game to challenge and improve typing efficiency">
     <meta name="keywords" content="Speed typing game, speed typing, typing, typing game">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="script.js" defer></script>
-    <title>Rapid Typing</title>
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Ceviche+One|Kalam|Source+Code+Pro|VT323"
+        rel="stylesheet">
+    <title>Rapid Typing Game</title>
 </head>
 
-<body>
-    <header>
-        <h1 id="logo">Welcome to Rapid Typing! <i class="fas fa-keyboard"></i></h1>
-    </header>
-    <!-- Light and Dark Theme button -->
-    <div class="theme-mode">
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball"></div>
-        </label>
-    </div>
+<body class="ext-center">
+    <header class="text-center">
+        <h1 id="optionBtn" class="logo">Welcome to Rapid Typing! <i class="fas fa-keyboard"></i> Menu </h1>
 
+    </header>
+    <div class="slide" id="menuSlide">
+        <!-- Introductions -->
+        <div class="menuInfo row mt-5">
+            <div class="container col-md-8">
+                <div class="menuCard card card-body bg-primary text-white">
+                    <h5>Instructions </h5>
+                    <p>Type each word in the given amount of seconds to score.</p>
+                </div>
+                <div class="menuCard mt-5 card card-body bg-primary text-white">
+                    <h5>Choose your difficulty</h5>
+                    <button id="easy">easy </button>
+                    <button id="medium">med </button>
+                    <button id="hard">hard </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Game Area -->
     <div class="container text-center">
-    <!-- Word input -->
+        <!-- Word input -->
         <div class="row">
             <div class="col-md-6 mx-auto">
-                <p class="intro">Type the given words within <span class="text-success" id="seconds">5-15</span> Seconds:
-                </p>
-                <h2 class="display-2 mb-3" id="current-word">echo</h2>
-                <h4 class="mt-2" id="message">Your time is up!</h4>
+                <p class="intro">Type the word below within <span class="text-success" id="seconds"></span> seconds:</p>
+                <h2 class="display-2 mb-3" id="current-word"></h2>
+                <h4 class="mt-2" id="message"></h4>
                 <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input"
-                    autofocus="">
+                    autofocus>
 
-    <!-- Time & Score Columns -->
+
+                <!-- Time & Score Columns -->
                 <div class="row mt-2">
                     <div class="col-md-6">
                         <h3>Time Left: <span id="time">0</span></h3>
@@ -47,16 +57,16 @@
                         <h3>Score: <span id="score">0</span></h3>
                     </div>
                     <div class="col-md-12">
-                        <h4>High score: <span id="high-score">3</span></h4>
+                        <h4>High score: <span id="high-score">0</span></h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <section>
-        <h2>Game Objectives:</h2>
-        <div class="objectives-list">
+    <!-- Game Objectives -->
+    <section class="game-instructions">
+        <h2>Game Instructions:</h2>
+        <div class="instructions-list">
             <ol>
                 <li> Choose your level.</li>
                 <li> You will be presented with words to type.</li>
@@ -64,7 +74,6 @@
                 <li> Challenge your time on every attempt! </li>
             </ol>
         </div>
-
     </section>
     <footer>
         <ul class="socials">
@@ -82,11 +91,10 @@
             </li>
 
         </ul>
-
     </footer>
-
     <!-- font awesome script  -->
     <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
 </body>
+<script src="assets/js/script.js"></script>
 
 </html>

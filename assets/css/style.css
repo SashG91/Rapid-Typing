@@ -1,28 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
 
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  color: rgb(30, 189, 142);
+  font-weight: 300;
+  color: #393E41;
+  background-color: #F6F7EB;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* header and logo */
+.menuInfo {
+  min-height: 80vh;
+}
+
+#optionBtn {
+  cursor: pointer;
+}
+
+/* headings and logo */
 
 header {
   width: 100%;
-  background-color: rgb(127, 131, 138);
-  padding-top: 10px;
+  background-color: #E94F37;
+  text-align: center;
 }
 
-header h1 {
+.logo {
+  font-size: 210%;
+  text-align: center;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 180%;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: white;
+  color: #393E41
 }
 
 #logo {
@@ -32,48 +54,7 @@ header h1 {
 
 }
 
-/* game objectives */
-section h2 {
-  color: rgb(127, 131, 138);
-}
-
-.objectives-list {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 85%;
-  background-color: rgb(127, 131, 138);
-  color: white;
-  line-height: 1.5;
-  padding: 5px;
-}
-
-ol {
-  padding-inline-start: 20px;
-  
-}
-
-/* words & timer */
-
-*{
-  margin: 0;
-}
-
-body{
-  font-family: 'Bebas Neue', sans-serif;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.container text-center{
-color: #f39c12;
-}
-
-.menuInfo{
-  min-height: 80vh;
-}
-#optionBtn{
-  cursor: pointer;
-}
-.slide{
+.slide {
   position: absolute;
   background-color: rgb(255, 255, 255);
   left: 0;
@@ -85,88 +66,72 @@ color: #f39c12;
   transition: .2s ease;
   opacity: 0;
 }
-.slideIn{
+
+.slideIn {
   opacity: 1;
   top: 48px;
 }
-.menuCard{
+
+.menuCard {
   font-family: 'Kalam', cursive;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
   border: none;
 }
-div button{
+
+div button {
   width: 120px;
   margin: 5px auto;
   cursor: pointer;
   border: none;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
-#current-word{
-  /* font-family: 'Source Code Pro', monospace; */
-  font-family: arial;
+
+/* game area */
+
+.container {
+  text-align: center;
+  margin-top: 15px;
 }
 
-/* dark and light mode */
-body.dark {
-  background: #292C35;
-}
-
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.label {
-  background-color: #111;
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#current-word {
+  color: #E94F37;
   padding: 5px;
-  position: relative;
-  height: 26px;
-  width: 50px;
-  transform: scale(1);
 }
 
-.label .ball {
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  height: 22px;
-  width: 22px;
-  transform: translateX(0px);
-  transition: transform 0.2s linear;
+input[type=text] {
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 5px;
+  box-shadow: inset 0 0 2px 0 rgba(0,0,0, .25);
 }
 
-.checkbox:checked+.label .ball {
-  transform: translateX(24px);
+
+
+/* game objectives */
+
+.game-instructions {
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 
-.fa-moon {
-  color: #f1c40f;
+ol {
+  padding-inline-start: 20px;
 }
 
-.fa-sun {
-  color: #f39c12;
-}
-
-.theme-mode {
-  margin-bottom: 12px;
+.instructions-list {
+  margin-top: 5px;
 }
 
 /* footer */
 
 footer {
-  background-color: rgb(127, 131, 138);
+  background-color: #E94F37;
   width: 100%;
 }
 
 footer li a:hover i {
-  color: white;
+  color: #F6F7EB;
   transform: rotate(-15deg) scale(1.3);
 }
 
@@ -175,14 +140,14 @@ footer li a:hover i {
   font-size: 150%;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
 }
 
 footer a {
-  color: white;
+  color: #393E41;
   justify-content: center;
   align-items: center;
 }

@@ -109,6 +109,7 @@ div button:hover {
 }
 
 #current-word {
+  font-family: 'Kalam', cursive;
   color: #E94F37;
   padding: 5px;
 }

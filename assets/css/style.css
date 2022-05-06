@@ -80,7 +80,10 @@ h3 {
   padding: 15px;
 }
 
-
+.menuCard h5 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 120%;
+}
 
 div button {
   width: 120px;
@@ -92,6 +95,10 @@ div button {
   background-color: #E94F37;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 100%;
+}
+
+div button:hover {
+  color: #F6F7EB;
 }
 
 /* game area */

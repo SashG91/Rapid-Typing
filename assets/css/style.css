@@ -164,7 +164,9 @@ footer a {
   justify-content: center;
   align-items: center;
 }
-
+.hide{
+  display: none;
+}
 /* media queries */
 @media (min-width: 320px) {}
 

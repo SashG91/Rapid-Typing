@@ -1,4 +1,3 @@
-window.addEventListener('load', init);
 
 // Globlas
 
@@ -90,8 +89,11 @@ function setlevel(e) {
     } else if (e.target === hardBtn) {
         currentLevel = levels.hard;
     }
+    menuSlideElt.classList.toggle("slideIn");
     console.log(currentLevel);
-    init();
+   // init();
+   document.querySelector('.game-instructions').classList.add('hide');
+   document.getElementById('typing-area').classList.remove('hide');
 }
 
 // Initialize Game
@@ -182,3 +184,8 @@ function checkStatus() {
 easyBtn.addEventListener('click', setlevel);
 mediumBtn.addEventListener('click', setlevel);
 hardBtn.addEventListener('click', setlevel);
+
+document.addEventListener("DOMContentLoaded", function(){
+    // Handler when the DOM is fully loaded
+    //menuSlideElt.classList.toggle("slideIn");
+  });

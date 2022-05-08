@@ -14,12 +14,13 @@
     <title>Rapid Typing Game</title>
 </head>
 
-<body class="ext-center">
+<body class="text-center">
     <header class="text-center">
-        <h1 id="optionBtn" class="logo">Welcome to Rapid Typing! <i class="fas fa-keyboard"></i> Menu </h1>
+        <h1 class="logo">Welcome to Rapid Typing! <i class="fas fa-keyboard"></i> Menu </h1>
 
     </header>
     <div class="slide" id="menuSlide">
+
         <!-- Introductions -->
         <div class="menuInfo row mt-5">
             <div class="container col-md-8">
@@ -38,7 +39,7 @@
         </div>
     </div>
     <!-- Game Area -->
-    <div class="container text-center">
+    <div class="container text-center hide" id="typing-area">
         <!-- Word input -->
         <div class="row">
             <div class="col-md-6 mx-auto">
@@ -74,6 +75,7 @@
                 <li> Use the time allocated to type your way through as many as you can.</li>
                 <li> Challenge your time on every attempt! </li>
             </ol>
+            <button id="optionBtn">Choose the level</button>
         </div>
     </section>
     <footer>

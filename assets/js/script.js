@@ -69,6 +69,14 @@ const words = [
     'policy',
     'condition',
     'nicely',
+    'mushroom',
+    'restaurant',
+    'examination',
+    'deploy',
+    'condition',
+    'trousers',
+    'breakfast',
+    'photograph',
     'success'
 ];
 //option

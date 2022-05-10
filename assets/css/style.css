@@ -93,11 +93,21 @@ div button:hover {
   color: #F6F7EB;
 }
 
-/* game area */
+/* generic utility classes */
 
 .container {
   text-align: center;
-  margin-top: 15px;
+  max-width: 500px;
+  margin: 15px auto 0;
+
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
 }
 
 #current-word {

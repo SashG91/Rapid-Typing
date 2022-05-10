@@ -22,14 +22,14 @@
     <div class="slide" id="menuSlide">
 
         <!-- Introductions -->
-        <div class="menuInfo row mt-5">
-            <div class="container col-md-8">
+        <div class="menuInfo">
+            <div class="container">
                 <div class="menuCard card card-body bg-primary text-white">
                     <h5>Instructions:</h5>
                     <br>
                     <p>Type each word in the given amount of seconds to score.</p>
                 </div>
-                <div class="menuCard mt-5 card card-body bg-primary text-white">
+                <div class="menuCard card card-body bg-primary text-white">
                     <h5>Choose the level:</h5>
                     <button id="easy">easy</button>
                     <button id="medium">med</button>
@@ -39,26 +39,26 @@
         </div>
     </div>
     <!-- Game Area -->
-    <div class="container text-center hide" id="typing-area">
+    <div class="container text-center text-left hide" id="typing-area">
         <!-- Word input -->
-        <div class="row">
-            <div class="col-md-6 mx-auto">
+        <div>
+            <div>
                 <p class="intro">Type the word below within <span class="text-success" id="seconds"></span> seconds:</p>
-                <h2 class="display-2 mb-3" id="current-word"></h2>
-                <h4 class="mt-2" id="message"></h4>
+                <h2 id="current-word"></h2>
+                <h4 id="message"></h4>
                 <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input"
                     autofocus>
 
 
                 <!-- Time & Score Columns -->
-                <div class="row mt-2">
-                    <div class="col-md-6">
+                <div>
+                    <div>
                         <h3>Time Left: <span id="time">0</span></h3>
                     </div>
-                    <div class="col-md-6 score">
+                    <div class="score">
                         <h3>Score: <span id="score">0</span></h3>
                     </div>
-                    <div class="col-md-12 score">
+                    <div class="score">
                         <h4>High score: <span id="high-score">0</span></h4>
                     </div>
                 </div>

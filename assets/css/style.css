@@ -184,17 +184,6 @@ footer a {
 
 /* error 404 page */
 
-.error-page {
-  color: green;
-}
-.error-page h2 {
-  padding: 10px;
-}
-
-.error-page p {
-  padding: 10px;
-}
-
 /* media queries */
 
 /* small devices (mobile phones, less than 320px) */

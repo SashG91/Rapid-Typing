@@ -1,6 +1,4 @@
-
-// Globlas
-
+//Globlas
 // Available Levels
 const levels = {
     easy: 5,

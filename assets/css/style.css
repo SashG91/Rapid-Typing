@@ -122,7 +122,7 @@ input[type=text] {
 .score {
   font-size: 80%;
 }
-/* game objectives */
+/* game instructions */
 
 .game-instructions {
   padding: 10px;
@@ -173,6 +173,7 @@ footer a {
   display: none;
 }
 /* media queries */
+
 @media (min-width: 320px) {}
 
 /* small devices (mobile phones, less than 320px) */

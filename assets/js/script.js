@@ -28,6 +28,7 @@ const highScoreElt = document.querySelector('#high-score');
 const easyBtn = document.querySelector('#easy');
 const mediumBtn = document.querySelector('#medium');
 const hardBtn = document.querySelector('#hard');
+const startButtonElement = document.getElementById ('startButton');
 
 const words = [
     'manual',
@@ -86,6 +87,11 @@ const menuSlideElt = document.getElementById('menuSlide');
 settingOption.addEventListener('click', function () {
     menuSlideElt.classList.toggle("slideIn");
 });
+
+startButtonElement.addEventListener('click', function() {
+init();
+startButtonElement.classList.add('hide');
+})
 
 
 // Seclect level

@@ -106,10 +106,6 @@ div button:hover {
   text-align:center;
 }
 
-.text-left{
-  text-align: left;
-}
-
 #current-word {
   font-family: 'Kalam', cursive;
   color: #E94F37;
@@ -126,7 +122,6 @@ input[type=text] {
 .score {
   font-size: 80%;
 }
-
 /* game objectives */
 
 .game-instructions {

@@ -183,6 +183,10 @@ footer a {
 }
 
 /* error 404 page */
+
+.error-page {
+  color: green;
+}
 .error-page h2 {
   padding: 10px;
 }

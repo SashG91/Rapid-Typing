@@ -190,6 +190,8 @@ function checkStatus() {
     if (!isPlaying && time === 0) {
         message.innerHTML = 'Your time is up!';
         score = -1;
+        document.getElementById('typing-area').classList.add('hide');
+        document.getElementById('game-over').classList.remove('hide');
     }
 }
 

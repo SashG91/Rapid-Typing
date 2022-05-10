@@ -8,6 +8,12 @@
     <meta name="description" content="Speed typing game to challenge and improve typing efficiency">
     <meta name="keywords" content="Speed typing game, speed typing, typing, typing game">
 
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Boogaloo-Ceviche+One-Kalam-Source+Code+Pro-VT323"
         rel="stylesheet">
@@ -52,9 +58,10 @@
             <div>
                 <p class="intro">Type the word below within <span class="text-success" id="seconds"></span> seconds:</p>
                 <h2 id="current-word">Ready?</h2>
-                <h4 id="message">You can do it!</h4>
+                <h4>You can do it!</h4>
                 <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input"
                     autofocus>
+
 
                 <!-- Time & Score -->
                 <div>
@@ -88,6 +95,26 @@
             <button id="optionBtn">Choose your level</button>
         </div>
     </section>
+    <!-- Game Over -->
+    <section class="hide" id="game-over">
+        <h2>Game Over</h>
+            <h4 id="message">You can do it!</h4>
+            <div class="score">
+                <h3>Score: <span id="score-game-over">0</span></h3>
+            </div>
+            <div class="score">
+                <h4>High score: <span id="high-score-game-over">0</span></h4>
+            </div>
+            <div>
+                Your current level is:
+                <span id="current-level"></span>
+            </div>
+            <div>
+                <button id="changeLevelBtn">Change your level</button>
+                <button id="playAgainBtn">Play Again</button>
+                <button id="quitBtn">Quit</button>
+            </div>
+    </section>
 
     <div class="js-required">
         <noscript>
@@ -119,7 +146,7 @@
     <script src="assets/js/script.js"></script>
     <!-- font awesome script  -->
     <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>

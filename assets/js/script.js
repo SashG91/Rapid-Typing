@@ -155,7 +155,7 @@ function startMatch() {
 function matchWords() {
 
     if (wordInput.value === currentWord.innerHTML) {
-        message.innerHTML = 'Great';
+        message.innerHTML = 'Great!';
         return true;
     } else {
         message.innerHTML = '...';

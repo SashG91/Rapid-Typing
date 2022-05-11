@@ -124,13 +124,13 @@ Click on this link to view the deployed site [Deployed url](https://sashg91.gith
 ### Wireframes
 Initial designs for the site were created using Balsamiq, the completed project is very closely designed to match the wireframes provided below for mobile, table and desktop. Some adjustments were made to the location of text, buttons and sections when compared to the completed project.
 #### Mobile
-<img width="723" alt="image" src="https://user-images.githubusercontent.com/97494070/160791222-6a708558-e188-49c1-bd82-4875942bfa06.png">
+<img width="851" alt="Screenshot 2022-05-10 at 18 55 41" src="https://user-images.githubusercontent.com/97494070/167854863-f9e30531-e358-4252-a168-62099597f37d.png">
 
 #### Desktop
-<img width="783" alt="image" src="https://user-images.githubusercontent.com/97494070/160792242-b06eca2a-124a-4a87-b571-218611a42f4f.png">
+<img width="857" alt="Screenshot 2022-05-10 at 18 56 01" src="https://user-images.githubusercontent.com/97494070/167854933-0919a98a-4e1e-4530-94f7-182b31331d81.png">
 
 ## Website Structure
-The website was original designed to be an easy to use platform. The site follows a simple structure and consists of 3 pages. It was initially designed for mobile use with responsiveness being applied to account for both tablet and desktop usage. No compromise was made in terms of sharing the same experience across all devices. User interest and comfort was carried through the entire site, the use of hover effects on buttons to ensure ease of use at any point on the site.
+The website was originally designed to be a simple easy to follow platform. The site follows a simple structure and consists of 1 main page that shows the game instructions and game play area, this is then supported by a level page that allows the user to select their level. It was initially designed for mobile use with responsiveness being applied to account for both tablet and desktop usage. No compromise was made in terms of sharing the same experience across all devices. User interest and comfort was carried through the entire site, the use of hover effects on buttons to ensure ease of use at any point on the site.
 
 ## Features
 
@@ -138,7 +138,7 @@ The website was original designed to be an easy to use platform. The site follow
 
 ##### Choose Level Button
 - Is visible on the start after the reader has read the game instructions.
-- Once clicked the user is taken to a hidden page that allows them to choose either easy, medium or hard as level and then returned back to the game start section.
+- Once clicked the user is taken to a slide in page that allows them to choose either easy, medium or hard as level and then returned back to the game start section.
 <img width="806" alt="Screenshot 2022-05-11 at 20 40 32" src="https://user-images.githubusercontent.com/97494070/167851961-598bc983-1f2d-4f17-b445-e45051849a9a.png">
 <img width="598" alt="Screenshot 2022-05-11 at 20 41 06" src="https://user-images.githubusercontent.com/97494070/167852060-248e1273-9c0f-4ef6-83e1-6d78fc392a56.png">
 
@@ -227,20 +227,16 @@ Below is an image of the audit results:
 - The site was designed to allow a user to navigate the site using the tab and arrow keys to navigate the site.
 
 ## Deployment
-1. Go to the settings section of the repository you are trying to deploy. https://github.com/SashG91/TCM-Tianjin-Cycle-Meet/settings
+1. Go to the settings section of the repository you are trying to deploy. https://github.com/SashG91/Rapid-Typing/settings
 
-2. Then select pages from the left-hand rail. 
-<img width="1080" alt="image" src="https://user-images.githubusercontent.com/97494070/159815756-a6fb8642-aa44-49ff-9ff0-26ab7ecb41d4.png">
+2. Then select pages from the left-hand rail. In the sources section click on the none drop down menu and select main.
+<img width="1316" alt="Screenshot 2022-05-10 at 15 59 05" src="https://user-images.githubusercontent.com/97494070/167856733-56fb62b1-acfa-43ca-805c-44e8bda2c677.png">
 
-3. In the sources section click on the none drop down menu and select main.
-<img width="687" alt="image" src="https://user-images.githubusercontent.com/97494070/159816006-2c455702-77c9-45a1-b5cf-0c05695aa6d8.png">
+3. Select save.
+<img width="1298" alt="Screenshot 2022-05-10 at 15 59 16" src="https://user-images.githubusercontent.com/97494070/167856929-d0f87ce3-2ac5-4a4a-bbad-d162f5b89456.png">
 
-4. Select save.
-<img width="775" alt="image" src="https://user-images.githubusercontent.com/97494070/159816126-2270317c-2a44-4198-97b3-e9999ae3b191.png">
-
-5. A blue section will appear with your deployed url.
-<img width="790" alt="image" src="https://user-images.githubusercontent.com/97494070/159816178-9fe3f958-7e0d-4f97-b2b2-2652b8ac4f18.png">
-
+4. A blue section will appear with your deployed url.
+<img width="1327" alt="Screenshot 2022-05-10 at 15 59 51" src="https://user-images.githubusercontent.com/97494070/167856997-7b735bc8-bcce-45c8-909a-1411a6eacb6a.png">
 
 ## Credits
 The Code Institute (CI) template was used to complete this project as linked here [Full template](https://github.com/Code-Institute-Org/gitpod-full-template) 
@@ -249,15 +245,10 @@ The Code Institute (CI) template was used to complete this project as linked her
 - To support the coding studied through Code Institute, online web tutorials from w3Schools were also referred to [w3Schools](https://www.w3schools.com/)
 
 ### Icons
-- The icons used for the heading, footer, routes and sign-up page were taken from [Font Awesome](https://fontawesome.com/v5/search?m=free) 
+- The icons used for the heading and footer were taken from [Font Awesome](https://fontawesome.com/v5/search?m=free) 
 
 - The Favicon used on the url tab for the site was applied using Favicon [Favicon](https://favicon.io/).
 
-### Images
-- 
-
-### Maps
-- 
 
 ## Technologies Used
  ### Git hub

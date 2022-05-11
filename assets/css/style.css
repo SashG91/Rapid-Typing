@@ -139,6 +139,7 @@ ol {
 .instructions-list {
   margin-top: 10px;
   text-align: left;
+  margin-left: 10px;
 }
 
 /* js required message */

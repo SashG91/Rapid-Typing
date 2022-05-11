@@ -149,6 +149,8 @@ function startMatch() {
     if (matchWords()) {
         isPlaying = true;
         time = currentLevel + 1;
+        clearInterval(refreshCheckStatusID)
+        refreshCountdownID = setInterval(countdown, 1000);
         showWord(words);
         wordInput.value = '';
         score++;
@@ -199,6 +201,7 @@ function countdown() {
     } else if (time === 0) {
         // Game is over
         isPlaying = false;
+        clearInterval(refreshCheckStatusID)
     }
     // Show time
     timeDisplay.innerHTML = time;

@@ -155,6 +155,23 @@ ol {
 
 }
 
+.play-again-area {
+  margin-top: 10px;
+}
+
+.play-again {
+  width: 120px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 30%);
+  background-color: #E94F37;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 120%;
+  color: #393E41;
+  text-decoration: none;
+}
+
 /* footer */
 
 footer {
@@ -205,15 +222,17 @@ footer a {
 /* small devices (mobile phones, less than 576px) */
 
 @media (min-width: 576px) {
-  
+
   .logo {
     font-size: 220%;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-size: 220%;
   }
-  
+
   ol {
     font-size: 120%;
   }
@@ -222,15 +241,17 @@ footer a {
 
 /* medium devices (tablets, less than 768px) */
 @media (min-width: 768px) {
-  
+
   .logo {
     font-size: 240%;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-size: 220%;
   }
-  
+
   ol {
     font-size: 150%;
   }

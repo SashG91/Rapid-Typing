@@ -94,7 +94,7 @@ Click on this link to view the deployed site [Deployed url](https://sashg91.gith
 ### Andrew
 - Enjoys playing a short game between his busy schedule while also trying to improve his typing proficiency.
 
-### Serena
+### Christine
 - Is a software developer who has a significant amount of typing practice, she would like to be faster and try typing words as quick as she can.
 
 ## User Experience (UX)
@@ -151,7 +151,7 @@ The website was originally designed to be a simple easy to follow platform. The 
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/97494070/167852685-ec9b7ae8-da7e-4999-a649-19f68194c186.png">
 
 ##### Footer
-- The footer is consistent across the entire site and contains the social links related to the TCM initiative.
+- The footer is consistent across the entire site and contains the social links related to the Rapid Typing.
 - The links have been created so that the user is taken to a new tab once clicked so as to prevent them from leaving the main page.
 - The footer is aimed to encourage users on social media in hopes of generating more attraction to Rapid Typing.
 <img width="1364" alt="image" src="https://user-images.githubusercontent.com/97494070/167852850-13a7c084-a6a4-4bc7-898a-f5fc84a11de5.png">
@@ -172,11 +172,15 @@ The website was originally designed to be a simple easy to follow platform. The 
 ## Testing
 
 ### Validation Testing
-- [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsashg91.github.io%2FTCM-Tianjin-Cycle-Meet%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-<img width="1315" alt="image" src="https://user-images.githubusercontent.com/97494070/159819475-01166390-459f-4604-93e6-a73912e1ed9c.png">
+- [CSS Validator]()
+<img width="1315" alt="image" src="https://user-images.githubusercontent.com/97494070/167861737-9894cc33-aad8-4948-aabf-c72fe8ac6300.png">
 
-- [Nu HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsashg91.github.io%2FTCM-Tianjin-Cycle-Meet%2F)
-<img width="1308" alt="image" src="https://user-images.githubusercontent.com/97494070/160891284-46e238be-bb4b-40c4-9d6e-a0adffb9fc26.png">
+- [Nu HTML Validator](https://validator.w3.org/nu/#textarea)
+<img width="1334" alt="image" src="https://user-images.githubusercontent.com/97494070/167861617-ddaa97a7-64c3-4e97-b0eb-aa92920809bf.png">
+
+- JS Validator
+<img width="1337" alt="image" src="https://user-images.githubusercontent.com/97494070/167862191-bc30c5ce-36ee-4a29-8381-0f70ef6bc21f.png">
+
 
 ### Cross Browser and Cross Device Testing
 - Below is a table showing cross device testing.
@@ -235,7 +239,8 @@ Below is an image of the audit results:
 
 ## Credits
 The Code Institute (CI) template was used to complete this project as linked here [Full template](https://github.com/Code-Institute-Org/gitpod-full-template) 
-
+This game was built with guidance and inspiration from sourcecodester using the folling [link](https://www.sourcecodester.com/javascript/14891/simple-typing-game-using-javascript-free-source-code.html)
+ 
 ### Code
 - To support the coding studied through Code Institute, online web tutorials from w3Schools were also referred to [w3Schools](https://www.w3schools.com/)
 

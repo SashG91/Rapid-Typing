@@ -100,9 +100,9 @@ Click on this link to view the deployed site [Deployed url](https://sashg91.gith
 ## User Experience (UX)
 
 ### Project Goals
-* The project is aimed at providing a convenient and simple way for users to imporve their typing efficiency for both beginner to experienced.
+* The project is aimed at providing a convenient and simple way for users to improve their typing efficiency for both beginner to experienced.
 
-* It is aimed at targetting users who would just like to try a short game or someone who would like to improve their typing speed.
+* It is aimed to target users who would just like to try a short game or someone who would like to improve their typing speed.
 
 * The site will also be updated on a monthly basis to offer new words.
 
@@ -111,7 +111,7 @@ Click on this link to view the deployed site [Deployed url](https://sashg91.gith
 
 
 #### Colors
-* The color palette for the site was inspired by using the Coolors.co website. The choice was based on using colours that compliment each other in a way that does not distract the user. The colors are consistent throught the game (including the 404 Error page). The exact colors used can be seen in the image below.
+* The color palette for the site was inspired by using the Coolors.co website. The choice was based on using colours that compliment each other in a way that does not distract the user. The colors are consistent throughout the game (including the 404 Error page). The exact colors used can be seen in the image below.
 ![Color Pallete](https://user-images.githubusercontent.com/97494070/167850825-f08f7ef9-f4ab-404f-b920-7ed8f1350b09.png)
 
 
@@ -119,7 +119,7 @@ Click on this link to view the deployed site [Deployed url](https://sashg91.gith
 * The website contains two primary font types 'Bebas Neue' for the header and headings which was then paired with the body text of Roboto using Google Fonts. Here is a [link](https://fonts.google.com/specimen/Raleway) which was used to compare and determine which fonts would compliment each other best for this sort of site. The inclusion of 'sans-serif' was applied as a fall-back font.
 
 #### Icons
-* Icons were used to give the site more character and keep within the game theme. The keyboard icon associated with the header is the central icon and was made consistent across all pages with the header. Hover effects were applied to allsocial icons to give the user more awareness. 
+* Icons were used to give the site more character and keep within the game theme. The keyboard icon associated with the header is the central icon and was made consistent across all pages with the header. Hover effects were applied to all social icons to give the user more awareness. 
 
 ### Wireframes
 Initial designs for the site were created using Balsamiq, the completed project is very closely designed to match the wireframes provided below for mobile, table and desktop. Some adjustments were made to the location of text, buttons and sections when compared to the completed project.
@@ -238,7 +238,7 @@ Below is an image of the audit results:
 
 ## Credits
 The Code Institute (CI) template was used to complete this project as linked here [Full template](https://github.com/Code-Institute-Org/gitpod-full-template) 
-This game was built with guidance and inspiration from sourcecodester using the folling [link](https://www.sourcecodester.com/javascript/14891/simple-typing-game-using-javascript-free-source-code.html)
+This game was built with guidance and inspiration from sourcecodester using the following [link](https://www.sourcecodester.com/javascript/14891/simple-typing-game-using-javascript-free-source-code.html)
  
 ### Code
 - To support the coding studied through Code Institute, online web tutorials from w3Schools were also referred to [w3Schools](https://www.w3schools.com/)

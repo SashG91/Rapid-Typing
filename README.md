@@ -203,28 +203,23 @@ The website was originally designed to be a simple easy to follow platform. The 
 - You can view manual testing results [here](https://docs.google.com/spreadsheets/d/1_lIjU79irAh2A_BxTXAEjpxL3J0hhV_Q/edit?usp=sharing&ouid=116957584173833035665&rtpof=true&sd=true)
 
 ### Defect Tracking
-Bugs and problems were tracked using GitHub issues. Here is a [link](https://github.com/SashG91/TCM-Tianjin-Cycle-Meet/issues) for this project
+Bugs and problems were tracked using GitHub issues. Here is a [link](https://github.com/SashG91/Rapid-Typing/issues) for this project
 
 ### Defects of Note
-- 
+- Timing and levels.
+- Play Again button.
 
 ### Outstanding Defects
-- No outstanding defects at this point. All noticeable defects identified, reported and closed.
+- Timing matching up to levels will be fixed a future date.
+- Play Again button not activated. Allowing the user to click and start rather than browser refresh.
 
 ## Accessibility
 
 ### Lighthouse Audits
-- I ran a lighthouse audit through [web.dev audit](https://web.dev/) to check the overall performance of the site. Some adjustments needed to be made to improve the results. The following changes were made:
-    - Change in text and overlay and footer colors (WhiteSmoke to white) 
-    - Alignment of Club Details content to centre (accommodate for wide-screen) and 
-    - A reduction in image sizes.
+- I ran a lighthouse audit through [web.dev audit](https://web.dev/) to check the overall performance of the site.  No adjustments were made after the audit.
 
 Below is an image of the audit results:
-
-<img width="715" alt="image" src="https://user-images.githubusercontent.com/97494070/160878328-a5815bea-b632-4088-b4d3-d054bd93a83f.png">
-
-### Keyboard Navigation
-- The site was designed to allow a user to navigate the site using the tab and arrow keys to navigate the site.
+<img width="1138" alt="image" src="https://user-images.githubusercontent.com/97494070/167859001-22e1a317-a290-41a9-aeb0-458f4a7cb3df.png">
 
 ## Deployment
 1. Go to the settings section of the repository you are trying to deploy. https://github.com/SashG91/Rapid-Typing/settings

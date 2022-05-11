@@ -1,10 +1,11 @@
+/*jshint esversion: 6 */
 //Globlas
 // Available Levels
 const levels = {
     easy: 5,
     medium: 3,
     hard: 2
-}
+};
 
 // To change level
 let currentLevel = levels.easy;
@@ -13,9 +14,8 @@ let time = currentLevel;
 let score = 0;
 let isPlaying;
 let maxScore;
-let refreshCountdownID; 
+let refreshCountdownID;
 let refreshCheckStatusID;
-let refreshCountdownID = setInterval(countdown, 1000000000);
 
 
 // DOM Elements
@@ -91,29 +91,18 @@ settingOption.addEventListener('click', function () {
 
 startButtonElement.addEventListener('click', function () {
     init();
-    startButtonElement.classList.add();
-})
-
-document.getElementById("changeLevelBtn").addEventListener('click', function () {
-    document.getElementById('game-over').classList.add('hide');
-    document.getElementById('typing-area').classList.remove('hide');
-    playagain();
-    menuSlideElt.classList.toggle("slideIn");
+    startButtonElement.classList.add('hide');
 });
-
 
 
 // Seclect level
 function setlevel(e) {
     if (e.target === easyBtn) {
         currentLevel = levels.easy;
-        document.getElementById("current-level").innerHTML = "easy";
     } else if (e.target === mediumBtn) {
         currentLevel = levels.medium;
-        document.getElementById("current-level").innerHTML = "medium";
     } else if (e.target === hardBtn) {
         currentLevel = levels.hard;
-        document.getElementById("current-level").innerHTML = "hard";
     }
     menuSlideElt.classList.toggle("slideIn");
     console.log(currentLevel);
@@ -121,10 +110,7 @@ function setlevel(e) {
     document.querySelector('.game-instructions').classList.add('hide');
     document.getElementById('typing-area').classList.remove('hide');
 }
-function playagain() {
-    time=currentLevel;
-    isPlaying=true;
-}
+
 // Initialize Game
 function init() {
     // Show number of sec in UI
@@ -137,7 +123,7 @@ function init() {
     clearInterval(refreshCountdownID);
     refreshCountdownID = setInterval(countdown, 1000);
     // Check game status
-    clearInterval(refreshCheckStatusID)
+    clearInterval(refreshCheckStatusID);
     refreshCheckStatusID = setInterval(checkStatus, 50);
     maxScore = localStorage.getItem('highScore');
     highScoreElt.innerHTML = maxScore;
@@ -149,7 +135,7 @@ function startMatch() {
     if (matchWords()) {
         isPlaying = true;
         time = currentLevel + 1;
-        clearInterval(refreshCheckStatusID)
+        clearInterval(refreshCountdownID);
         refreshCountdownID = setInterval(countdown, 1000);
         showWord(words);
         wordInput.value = '';
@@ -201,7 +187,7 @@ function countdown() {
     } else if (time === 0) {
         // Game is over
         isPlaying = false;
-        clearInterval(refreshCheckStatusID)
+        clearInterval(refreshCountdownID);
     }
     // Show time
     timeDisplay.innerHTML = time;
@@ -215,7 +201,7 @@ function checkStatus() {
         document.getElementById('typing-area').classList.add('hide');
         document.getElementById('game-over').classList.remove('hide');
         clearInterval(refreshCountdownID);
-        clearInterval(refreshCheckStatusID)
+        clearInterval(refreshCheckStatusID);
     }
 }
 

@@ -91,7 +91,7 @@ settingOption.addEventListener('click', function () {
 
 startButtonElement.addEventListener('click', function () {
     init();
-    startButtonElement.classList.add('hide');
+    startButtonElement.classList.add();
 })
 
 document.getElementById("changeLevelBtn").addEventListener('click', function () {
@@ -214,6 +214,8 @@ function checkStatus() {
         score = -1;
         document.getElementById('typing-area').classList.add('hide');
         document.getElementById('game-over').classList.remove('hide');
+        clearInterval(refreshCountdownID);
+        clearInterval(refreshCheckStatusID)
     }
 }
 

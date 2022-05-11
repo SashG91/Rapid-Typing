@@ -13,6 +13,7 @@ let time = currentLevel;
 let score = 0;
 let isPlaying;
 let maxScore;
+let refreshCountdownID = setInterval(countdown, 1000000000);
 
 
 // DOM Elements
@@ -26,7 +27,7 @@ const highScoreElt = document.querySelector('#high-score');
 const easyBtn = document.querySelector('#easy');
 const mediumBtn = document.querySelector('#medium');
 const hardBtn = document.querySelector('#hard');
-const startButtonElement = document.getElementById ('startButton');
+const startButtonElement = document.getElementById('startButton');
 
 const words = [
     'manual',
@@ -86,28 +87,42 @@ settingOption.addEventListener('click', function () {
     menuSlideElt.classList.toggle("slideIn");
 });
 
-startButtonElement.addEventListener('click', function() {
-init();
-startButtonElement.classList.add('hide');
+startButtonElement.addEventListener('click', function () {
+    init();
+    startButtonElement.classList.add('hide');
 })
+
+document.getElementById("changeLevelBtn").addEventListener('click', function () {
+    document.getElementById('game-over').classList.add('hide');
+    document.getElementById('typing-area').classList.remove('hide');
+    playagain();
+    menuSlideElt.classList.toggle("slideIn");
+});
+
 
 
 // Seclect level
 function setlevel(e) {
     if (e.target === easyBtn) {
         currentLevel = levels.easy;
+        document.getElementById("current-level").innerHTML = "easy";
     } else if (e.target === mediumBtn) {
         currentLevel = levels.medium;
+        document.getElementById("current-level").innerHTML = "medium";
     } else if (e.target === hardBtn) {
         currentLevel = levels.hard;
+        document.getElementById("current-level").innerHTML = "hard";
     }
     menuSlideElt.classList.toggle("slideIn");
     console.log(currentLevel);
-   // init();
-   document.querySelector('.game-instructions').classList.add('hide');
-   document.getElementById('typing-area').classList.remove('hide');
+    // init();
+    document.querySelector('.game-instructions').classList.add('hide');
+    document.getElementById('typing-area').classList.remove('hide');
 }
-
+function playagain() {
+    time=currentLevel;
+    isPlaying=true;
+}
 // Initialize Game
 function init() {
     // Show number of sec in UI
@@ -117,7 +132,8 @@ function init() {
     // Start matching on word input
     wordInput.addEventListener('input', startMatch);
     // Call countdown every second
-    setInterval(countdown, 1000);
+    clearInterval(refreshCountdownID);
+    refreshCountdownID = setInterval(countdown, 1000);
     // Check game status
     setInterval(checkStatus, 50);
     maxScore = localStorage.getItem('highScore');
@@ -199,7 +215,7 @@ easyBtn.addEventListener('click', setlevel);
 mediumBtn.addEventListener('click', setlevel);
 hardBtn.addEventListener('click', setlevel);
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
     // Handler when the DOM is fully loaded
     //menuSlideElt.classList.toggle("slideIn");
-  });
+});

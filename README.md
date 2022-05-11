@@ -158,9 +158,8 @@ The website was originally designed to be a simple easy to follow platform. The 
 
 
 ##### Error 404 page
-- The Error 404 page was designed to warn the user that something has gone wrong. The user can then click the heading or tabs to go back to safety.
-- The header and footer is consistent on this page to give the user comfort that safety is only a click away.
-- An image consistent with the site and bold red text was used to make it more personal.
+- The Error 404 page was designed to warn the user that something has gone wrong.
+- The header and footer is consistent on this page to give the user comfort that safety is only a click away with a provided link.
 <img width="1366" alt="image" src="https://user-images.githubusercontent.com/97494070/167853091-27509957-d79b-4fba-ab1a-e0f2d75ff017.png">
 
 
@@ -210,8 +209,8 @@ The website was originally designed to be a simple easy to follow platform. The 
 Bugs and problems were tracked using GitHub issues. Here is a [link](https://github.com/SashG91/Rapid-Typing/issues) for this project
 
 ### Defects of Note
-- Timing and levels.
-- Play Again button.
+- Timing matching with levels.
+- Play Again button (not requiring the user to refresh the browser to restart).
 
 ### Outstanding Defects
 - Timing matching up to levels will be fixed a future date.

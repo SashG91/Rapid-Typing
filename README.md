@@ -83,126 +83,91 @@ Click on this link to view the deployed site [Deployed url](https://sashg91.gith
 ## User Stories
 
 ### New visitor
-- I want to 
+- I want to read the rules and begin the game.
+- I want to retry as many times as I like.
 
 ### Returning visitor
-- I want to
-
-### Frequent visitor
-- I want to
+- I want to challenge my previous high score.
+- I want to practice typing new words.
 
 ## User Profiles
-### Andy
-- Is a new local resident in Tianjin and has just taken on cycling as a hobby, he is unsure about his abilities having done a few rides on his own and worries about his confidence alone on the road, the idea of joining one of TCMs organized group rides offers him the support he needs.
+### Andrew
+- Enjoys playing a short game between his busy schedule while also trying to improve his typing proficiency.
 
 ### Serena
-- Is an experienced road cyclist who has competed at a few events. She has her regular training routes, but would like to meet some new people, try a new route and join a group that is equally driven to improve their cycling fitness.
+- Is a software developer who has a significant amount of typing practice, she would like to be faster and try typing words as quick as she can.
 
 ## User Experience (UX)
 
 ### Project Goals
-* The project is aimed at providing a convenient and seamless way for cyclists to join an organized training ride in Tianjin, China.
+* The project is aimed at providing a convenient and simple way for users to imporve their typing efficiency for both beginner to experienced.
 
-* It is aimed at targeting both social and serious cyclists who need some structure to their weekly training or for those who have fears of riding alone and maybe find it difficult to plan a productive training session.
+* It is aimed at targetting users who would just like to try a short game or someone who would like to improve their typing speed.
 
-* The site will also be updated on a monthly basis to offer users different location choices around the city.
-
-* The model of TCM is to provide pre-organized routes determined by a regular team of cyclists who will accompany all groups, with every group having a lead rider and a sweeper to ensure that the entire group is supported from start to finish.
+* The site will also be updated on a monthly basis to offer new words.
 
 ### Design Choices
-* The site was designed to create motivation within the local cycling community by offering a fresh and sporty site that encourages users to join an organized training session. Design choices were chosen to provide a motivating and easy to use site.
+* The site was designed to create a sense of competition to try encourage users to improve their typing speed and type as many words as possible without running out of time.
 
 
 #### Colors
-* The color palette for the site was inspired by the INEOS Grenadiers British professional cycling team, although the exact colors were not used, a similar palette of red, blue and white were used from the initial inspiration. Applying opacity on the red or grey overlays to compliment key information such as areas, meeting times and locations. A more distinct variation of red was added to the sign up form to make it more present on the page. Coolors.co was used to generate the palette as seen in the image below.
+* The color palette for the site was inspired by using the Coolors.co website. The choice was based on using colours that compliment each other in a way that does not distract the user. The colors are consistent throught the game (including the 404 Error page). The exact colors used can be seen in the image below.
+![Color Pallete](https://user-images.githubusercontent.com/97494070/167850825-f08f7ef9-f4ab-404f-b920-7ed8f1350b09.png)
 
-- red (#b61614)
-- blue (#0074d0)
-- White (#FAFAFA)
-
-<img width="300" height= "300" alt="image" src="https://user-images.githubusercontent.com/97494070/160873327-a94436ad-6df7-4d51-a80e-89ec8f5e09ad.png">
 
 #### Typography
 * The website contains two primary font types 'Bebas Neue' for the header and headings which was then paired with the body text of Roboto using Google Fonts. Here is a [link](https://fonts.google.com/specimen/Raleway) which was used to compare and determine which fonts would compliment each other best for this sort of site. The inclusion of 'sans-serif' was applied as a fall-back font.
 
-#### Images
-* The images for the site were chosen to represent a culture of motivation, inspiration and cycling fitness. The Home page hero image is aimed at providing and immediate sense of group support and shared enjoyment. The routes page chainring image was used mainly to give contrast to this page using an overlay effect. The bike cockpit on the signup page was aimed at depicting the feeling that the user is a step closer to their first organized group cycle. The above images were sourced from Pexels [Pexels](https://www.pexels.com/).
-
-#### Animations
-* Animations were applied to the home and signup page images with the intention of catching the users attention once landing on the page. The social icons also had a transform effect applied to it, in order to give some character to the icons with the intention of attracting the user.
-
 #### Icons
-* Icons were used to give the site more character and keep within the theme of cycling. The gear icon associated with the header is the central icon and was made consistent across all pages with the header. On the routes page specific icons were chosen to represent the choice of rides that were available to the user. The social icons chosen were used to give familiarity to the various social platforms. Hover effects were applied to all navigation tabs, social icons and the submit button give the user more awareness. 
-
-#### Maps
-* Satellite maps were used to show the meeting points and to some degree the terrain for the cycle options. The specific meeting points included text showing the address of the meeting point so that it is easier for first time users to identify where to meet and for returning users to either confirm a meeting point or perhaps find new/updated points.
+* Icons were used to give the site more character and keep within the game theme. The keyboard icon associated with the header is the central icon and was made consistent across all pages with the header. Hover effects were applied to allsocial icons to give the user more awareness. 
 
 ### Wireframes
 Initial designs for the site were created using Balsamiq, the completed project is very closely designed to match the wireframes provided below for mobile, table and desktop. Some adjustments were made to the location of text, buttons and sections when compared to the completed project.
 #### Mobile
 <img width="723" alt="image" src="https://user-images.githubusercontent.com/97494070/160791222-6a708558-e188-49c1-bd82-4875942bfa06.png">
 
-#### Tablet
-<img width="754" alt="image" src="https://user-images.githubusercontent.com/97494070/160792064-59bbb6b4-8487-4c99-8cb9-164d16c4c2d1.png">
-
 #### Desktop
 <img width="783" alt="image" src="https://user-images.githubusercontent.com/97494070/160792242-b06eca2a-124a-4a87-b571-218611a42f4f.png">
 
 ## Website Structure
-The website was original designed to be an easy to use platform. The site follows a simple structure and consists of 3 pages. It was initially designed for mobile use with responsiveness being applied to account for both tablet and desktop usage. No compromise was made in terms of sharing the same experience across all devices. User interest and comfort was carried through the entire site, the use of animated images to catch the eye and hover effects on pages and buttons to ensure ease of use at any point on the site.
+The website was original designed to be an easy to use platform. The site follows a simple structure and consists of 3 pages. It was initially designed for mobile use with responsiveness being applied to account for both tablet and desktop usage. No compromise was made in terms of sharing the same experience across all devices. User interest and comfort was carried through the entire site, the use of hover effects on buttons to ensure ease of use at any point on the site.
 
 ## Features
 
 #### Existing Features
 
-##### Navigation Bar
-- Is visible on all three pages of the site. It is fully responsive and allows the user to navigate the site with ease.
-- The navigation bar is consistent across all three pages to give the user a sense of familiarity.
-- The navigation tabs are designed to allow the user to move from page to page without having to go back and forth by using the back button.
+##### Choose Level Button
+- Is visible on the start after the reader has read the game instructions.
+- Once clicked the user is taken to a hidden page that allows them to choose either easy, medium or hard as level and then returned back to the game start section.
+<img width="806" alt="Screenshot 2022-05-11 at 20 40 32" src="https://user-images.githubusercontent.com/97494070/167851961-598bc983-1f2d-4f17-b445-e45051849a9a.png">
+<img width="598" alt="Screenshot 2022-05-11 at 20 41 06" src="https://user-images.githubusercontent.com/97494070/167852060-248e1273-9c0f-4ef6-83e1-6d78fc392a56.png">
 
-<img width="1363" alt="image" src="https://user-images.githubusercontent.com/97494070/160969382-3f897975-8cbb-4677-b2ad-80ef9b86b74c.png">
+##### Start Button
+- Is presented to allow the user to settle in before the first current word is presented.
+<img width="478" alt="Screenshot 2022-05-11 at 20 41 30" src="https://user-images.githubusercontent.com/97494070/167852152-0ab022d7-0998-4f39-9533-900f9858433d.png">
 
-##### Hero Image
-- Is a focus image that includes an overlay of text that shows the user the districts that the cycle meet covers.
-- The image is specific in that it shows exactly what sort of environment TCM would like to create.
-
-<img width="1372" alt="image" src="https://user-images.githubusercontent.com/97494070/160971776-fc2bdf1c-70ca-4175-9547-1001a90be91c.png">
-
-##### Club Details
-- The club details section is aimed at conveying the reason behind the TCM model.
-- The user will be able to determine whether TCM is the best option for them as it offers options for both social and serious cyclist.
-<img width="1269" alt="image" src="https://user-images.githubusercontent.com/97494070/160875173-7018ea3b-5d04-4df0-bfc3-278fa4317191.png">
-
-##### Routes
-- The routes tab provides the user with three route options and outlines the meeting locations, days and times for the grouped rides. The user is given basic information and a map reference for the meeting point.
-- The routes tab is considered a dynamic section in that it will be updated at most on a monthly basis to offer more routes to the user.
-
-<img width="1370" alt="image" src="https://user-images.githubusercontent.com/97494070/160875801-0a91ba5b-f88f-45fd-b378-de0ce4f93b77.png">
-
-##### Signup page
-- The sign up page is a short form that allows the user sign up to join a group cycle at TCM.
-- The sign up form requires the user to provide their name, email and select their type of cycle interest (Flat, Climbs or Both).
-- Upon clicking the "You're good to go!" submit button the user will be taken to a new page which shows a generic success message as used in CI.
--
-<img width="1373" alt="image" src="https://user-images.githubusercontent.com/97494070/160875528-84ce1628-f437-4a24-94b1-432273ba246a.png">
+##### Game Over Screen
+- The user is presented with a game over message to show that their time is up and presented with an instruction to refresh the browser to choose a level and start again.
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/97494070/167852685-ec9b7ae8-da7e-4999-a649-19f68194c186.png">
 
 ##### Footer
 - The footer is consistent across the entire site and contains the social links related to the TCM initiative.
-- It contains a section that asks if the user has questions and if they do a central email address is provided.
 - The links have been created so that the user is taken to a new tab once clicked so as to prevent them from leaving the main page.
-- The footer is aimed to encourage users on social media in hopes of generating more attraction to TCM and for alternative means of communication.
+- The footer is aimed to encourage users on social media in hopes of generating more attraction to Rapid Typing.
+<img width="1364" alt="image" src="https://user-images.githubusercontent.com/97494070/167852850-13a7c084-a6a4-4bc7-898a-f5fc84a11de5.png">
 
-<img width="1283" alt="image" src="https://user-images.githubusercontent.com/97494070/160875366-fcb8cc39-df4a-48dc-856c-e1a67ca5600a.png">
 
 ##### Error 404 page
 - The Error 404 page was designed to warn the user that something has gone wrong. The user can then click the heading or tabs to go back to safety.
 - The header and footer is consistent on this page to give the user comfort that safety is only a click away.
 - An image consistent with the site and bold red text was used to make it more personal.
+<img width="1366" alt="image" src="https://user-images.githubusercontent.com/97494070/167853091-27509957-d79b-4fba-ab1a-e0f2d75ff017.png">
 
-<img width="1374" alt="image" src="https://user-images.githubusercontent.com/97494070/160973263-57a3a6e2-45c2-41ad-91de-44fc12922bc0.png">
 
 #### Future Features
--
+-Leaderboard and Save high scores
+-Add in a play again and quit button to offer added User Experience.
+-Background audio.
 
 ## Testing
 
@@ -226,19 +191,13 @@ The website was original designed to be an easy to use platform. The site follow
 | real computer: Macbook Pro     | Chrome      | iOs        | 1400 x 766       |
 | real tablet: iPad 11 Pro       | Chrome      | iOs        | 1024 x 1366      |
 
-### Testing User Stories form User Experience section
+### Testing User Stories from User Experience section
 
 ### New visitor
-1. I want to find out more about Tianjin Cycle Meet and whether the routes/structure work for me and would like to speak to someone.
-  - 
+1. I want to understand how the game works and have a few attempts to check my ability.
 
 ### Returning visitor
-2. I want to see if the new routes have been announced, speak to an organizer and sign up for the next ride.
-  - 
-
-### Frequent visitor
-3. I want to sign up for another cycle meet, check the new routes and speak to someone.
-  - 
+2. I want to see if the new words have been added and try improve on my previous scores.
 
 ### Manual Testing
 - You can view manual testing results [here](https://docs.google.com/spreadsheets/d/1_lIjU79irAh2A_BxTXAEjpxL3J0hhV_Q/edit?usp=sharing&ouid=116957584173833035665&rtpof=true&sd=true)

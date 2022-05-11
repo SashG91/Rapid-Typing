@@ -13,6 +13,8 @@ let time = currentLevel;
 let score = 0;
 let isPlaying;
 let maxScore;
+let refreshCountdownID; 
+let refreshCheckStatusID;
 let refreshCountdownID = setInterval(countdown, 1000000000);
 
 
@@ -135,7 +137,8 @@ function init() {
     clearInterval(refreshCountdownID);
     refreshCountdownID = setInterval(countdown, 1000);
     // Check game status
-    setInterval(checkStatus, 50);
+    clearInterval(refreshCheckStatusID)
+    refreshCheckStatusID = setInterval(checkStatus, 50);
     maxScore = localStorage.getItem('highScore');
     highScoreElt.innerHTML = maxScore;
 }

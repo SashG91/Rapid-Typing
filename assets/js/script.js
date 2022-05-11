@@ -30,6 +30,8 @@ const easyBtn = document.querySelector('#easy');
 const mediumBtn = document.querySelector('#medium');
 const hardBtn = document.querySelector('#hard');
 const startButtonElement = document.getElementById('startButton');
+const changeLevelBtn = document.getElementById('changeLevelBtn');
+const playAgainBtn = document.getElementById('playAgainBtn');
 
 const words = [
     'manual',
@@ -94,8 +96,7 @@ startButtonElement.addEventListener('click', function () {
     startButtonElement.classList.add('hide');
 });
 
-
-// Seclect level
+// Select level
 function setlevel(e) {
     if (e.target === easyBtn) {
         currentLevel = levels.easy;

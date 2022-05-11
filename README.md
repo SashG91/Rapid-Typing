@@ -6,13 +6,13 @@
 Sashen_Govender
 
 ## Project Overview
-Welcome to Tianjin Cycle Meet (TCM) a local cycle initiative aimed to motivate both social and serious cyclists into weekly rides that contribute towards developing a structured cycle routine. TCM is aimed to attract cyclists from all districts across the city and will target users of different abilities. The TCM site was designed to be portal where both new and returning users can find information relating to the details of when and where the next cycle meet would take place. 
+Welcome to Rapid Typing a simple typing game that encourages and challenges users to practice and improve their typing efficiency. The Rapid Typing Game was designed to help new and returning users to improve their typing proficiency.
 
-The goal for this project was to combine my understanding of html and CSS to create an easy to use site that motivates local cyclists into improving their fitness through group cycle meets.
+The goal for this project was to combine my understanding of html, CSS and JavaScript to create an easy to use site that allows the user to challenge and improve their typing efficiency.
 
-Click on this link to view the deployed site [Deployed url](https://sashg91.github.io/TCM-Tianjin-Cycle-Meet/)
+Click on this link to view the deployed site [Deployed url](https://sashg91.github.io/Rapid-Typing/) 
 
-<img width="1036" alt="image" src="https://user-images.githubusercontent.com/97494070/161070332-cd37983c-7b79-42ff-ad73-1fcdcc497d21.png">
+<img width="945" alt="AmIResponsive" src="https://user-images.githubusercontent.com/97494070/167824449-bb667279-d7d9-4238-a68c-82fb683dcbd8.png">
 
 ## Table of Contents
 - [Tianjin Cycle Meet](#tianjin-cycle-meet)

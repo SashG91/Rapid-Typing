@@ -81,6 +81,22 @@ const words = [
     'trousers',
     'breakfast',
     'photograph',
+    'cat',
+    'monkey',
+    'friendly',
+    'intelligent',
+    'magnificent',
+    'dog',
+    'special',
+    'vet',
+    'crazy',
+    'great',
+    'unique',
+    'challenging',
+    'pressure',
+    'mouse',
+    'football',
+    'tennis',
     'success'
 ];
 //option
